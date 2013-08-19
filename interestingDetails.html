@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<script src="scripts.js"></script>
+    
+
+<title>Home</title>
+</head>
+<body>
+	<div data-role="page" id="interestingDetails">
+		<div data-role="panel" id="menuPanel" data-theme="a" data-position-fixed="true">
+			<ul data-role="listview" data-theme="a">
+				<li><a href="basicInfo.html">Basic Info</a></li>
+				<li><a href="interestingDetails.html" class="ui-btn-active ui-state-persist">Interesting Details</a></li>
+				<li><a href="bookSummary.html">Book Summary</a></li>
+				<li><a href="themes.html">Themes</a></li>
+				<li><a href="characters.html">Characters</a></li>
+				<li><a href="chapterSummaries.html">Chapter Summaries</a></li>
+				<li><a href="essayTopics.html">Essay Topics</a></li>
+			</ul>
+		</div><!--PANEL-->	
+		<div data-role="header" data-id="fixhead" data-position="fixed" data-tap-toggle="false">
+			<a href="#menuPanel" data-role="button" data-iconpos="notext" data-icon="bars"></a>
+			<h1>Interesting Details</h1>
+			<a href="index.html" data-role="button" data-iconpos="notext" data-icon="home"></a>
+		</div><!--HEADER-->
+		<div data-role="content">
+			<div>
+				<!--Be sure to switch between data theme "c" and "d"-->
+				<!--Copy more from <ul *to* /ul> if more themes needed and change ^^^-->
+				<ul data-role="listview" data-inset="true">
+					<li data-theme="d">The novel sold very well after its publication in the 1850's and 
+					many view it as an extremely important piece of literature in the abolitionist movement,
+					which would eventually culminate in the Civil War.</li>
+				</ul>
+				
+				<ul data-role="listview" data-inset="true">
+					<li data-theme="c">A great controversy and uproar occurred in the southern states in response to the novel, 
+					as many slavery supporters viewed it as harmful to their beliefs. Stowe received hate mail, and one letter even 
+					included the ear of a slave.</li>
+				</ul>
+				
+				<ul data-role="listview" data-inset="true">
+					<li data-theme="d">Stowe remained committed to her cause even after publishing the novel, she would spend her life 
+					as a great advocate for human rights in general, not just black rights.</li>
+				</ul>
+			</div>
+		</div><!--CONTENT-->
+		<div data-role="footer" data-id="fixfoot" data-position="fixed" data-tap-toggle="false">
+			<!--Replace the text below with the name of the book-->
+			<h3>Uncle Tom's Cabin</h3>
+		</div><!--FOOTER-->
+	</div><!--PAGE-->
+</body>
+</html>
